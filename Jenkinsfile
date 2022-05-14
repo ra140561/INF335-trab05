@@ -10,7 +10,7 @@ pipeline {
         stage('Build and test') {
             steps {
                 // Get some code from a GitHub repository
-                git branch: 'main', url: 'https://github.com/RBonacin/INF335-Jenkins'
+                git branch: 'main', url: 'https://github.com/ra140561/INF335-trab05-p1'
 
                 // Run Maven on a Unix agent. --> Tests grabbed from POM.XML within project
                 sh "cd trab-04; mvn -Dmaven.test.failure.ignore=true clean package"
