@@ -13,7 +13,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/ra140561/INF335-trab05-p1'
 
                 // Run Maven on a Unix agent. --> Tests grabbed from POM.XML within project
-                sh "cd trab-04; mvn -Dmaven.test.failure.ignore=true clean package"
+                sh "cd trab-05; mvn -Dmaven.test.failure.ignore=true clean package"
 
                 // To run Maven on a Windows agent, use
                 // bat "mvn -Dmaven.test.failure.ignore=true clean package"
